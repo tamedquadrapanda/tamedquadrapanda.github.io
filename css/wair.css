@@ -1,0 +1,342 @@
+/* Global ---------------------------------------------------------- */
+
+body {
+  min-width: 1400px;
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+/* Top Navigation ---------------------------------------------------------- */
+.topnav-bar {
+  background-color: #2C79BB;
+}
+.topnav-logo-container {
+  float: left;
+  padding-top: auto;
+  padding-bottom: auto;
+  -webkit-transition: padding .5s ease-in-out;
+  -moz-transition: padding .5s ease-in-out;
+  transition: padding .5s ease-in-out;
+}
+.topnav-logo-container img {
+  padding-left: 50px;
+  padding-top: 2px;
+  height: 40px;
+  -webkit-transition: height .5s ease-in-out;
+  -moz-transition: height .5s ease-in-out;
+  transition: height .5s ease-in-out;
+}
+
+.topnav-menu-container {
+  margin-top: 2px;
+  margin-right: 100px;
+  float: right;
+}
+
+.topnav-menu-container a {
+  margin: auto 10px;
+  padding-bottom: 18px;
+}
+
+.topnav-menu-container a:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+.topnav-menu-container a.active {
+  color: white;
+  border-bottom: 2px solid orange;
+}
+
+/* Shared ---------------------------------------------------------- */
+
+.clear {
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.container {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.photoshow {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-image: url("/img/groupphoto_highres.jpeg");
+  height: 200px;
+}
+
+.intro {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 60%;
+}
+
+.details {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 65%;
+}
+
+.section-sep .section-sep-head {
+  background-color: #2C79BB;
+  width: 10px;
+  height: 36px;
+  float: left;
+  border-bottom: 0px;
+}
+.section-sep {
+  width: 1000px;
+  height: 36px;
+}
+.section-sep h4 {
+  padding-left: 20px;
+}
+
+.section-sep .sep-line {
+  height: 1px;
+  margin-left: 10px;
+  border-bottom: 1px #e0e0e0 solid;
+}
+
+/* subtitle + divider */
+.subtitle-container {
+  text-align: center;
+}
+.subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 0;
+  display: inline-block;
+}
+.subtitle h4 {
+  text-align: center;
+}
+.subtitle .divider {
+  border-bottom: 5px #2C79BB solid;
+}
+
+.text-desc {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  width: 60%;
+}
+.text-desc .title {
+  font-weight: bold;
+}
+
+
+/* People ---------------------------------------------------------- */
+
+.people {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.people .individual {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  height: 240px;
+  width: 240px;
+}
+
+.people .individual img {
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.people .individual .name {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.people .individual .title {
+  text-align: center;
+}
+
+/*.people .card-title {*/
+  /*width: 30px;*/
+/*}*/
+
+/*.people .join-us .card-image {*/
+  /*width: 320px;*/
+/*}*/
+
+/*.people .join-us .card-image img {*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*height: 230px;*/
+  /*width: 230px;*/
+  /*overflow: hidden;*/
+  /*object-fit: contain;*/
+/*}*/
+
+/* */
+.circular--square {
+  border-radius: 50%;
+}
+
+.circular--square {
+  border-radius: 50%;
+}
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.circular--square,
+.circular--landscape,
+.circular--portrait {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Publication ---------------------------------------------------------- */
+
+.publication {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+.publication .pub-items {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.publication .pub-items .section-sep {
+  margin-top: 40px;
+}
+
+.publication .pub-items .entry {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+.publication .pub-items .entry .title{
+  font-weight: bold;
+}
+
+.publication .pub-items .entry .authors {
+  font-style: italic;
+}
+
+.publication .pub-items .entry .venue {
+}
+
+.publication .pub-items .entry .year {
+}
+
+.block1 {
+  background-color: #addaf8;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("/img/groupphoto_highres.jpeg");
+  /* Set a specific height */
+  min-height: 900px;
+  /*max-width: 100%;*/
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+}
