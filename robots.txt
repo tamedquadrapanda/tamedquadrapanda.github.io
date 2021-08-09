@@ -1,1 +1,1 @@
-Sitemap: https://research.wormpex.com/sitemap.xml
+Sitemap: https://tamedquadrapanda.github.io/sitemap.xml
