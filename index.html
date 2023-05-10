@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF = 8">
+    <meta http-equiv="X-UA-Compatible " content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Xie Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist">
+    <script src="https://kit.fontawesome.com/2e5edeaef4.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 1.5s;
+        }
+    </style>
+</head>
+<body onload="document.body.style.opacity='1'">
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class = "lastelem">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><span class = "pink">Software Engineering Intern</span> | <a href="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer" class = "m1">Mic</a><a href="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer" class = "m2">ro</a><a href="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer" class = "m3">so</a><a href="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer" class = "m4">ft</a> | <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener noreferrer" class = "michigan1">University of </a> <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener noreferrer" class = "yellowmichigan">M</a><a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener noreferrer" class = "michigan2">ichigan</a></p>
+            <h1>Hey!<br>My name is Josh Xie. <br>Welcome to my website!</h1> 
+        </div>
+    </div>
+</div>
+<!-- introduction section -->
+<div id = "introduction">
+    <div class = "container">
+        <div class = "row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">Introduction</h1>
+                <p>
+                    Hey! My name is Josh, I am from Bellevue, WA, and I am a rising junior studying at the University of Michigan. 
+                    Some of my favorite things to do are read, exercise, listen to music, and keep up with current events! 
+                    I am majoring in Computer Science with an concentration in Intelligent Systems and I'm also planning on pursuing a minor in Business. 
+                    I have completed several software engineering and full-stack development projects, which can be found on my GitHub, and
+                    I have also recently grown a passion for consulting. Feel free to reach out to me at any time!
+                </p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C++<br>Java<br>Python<br>HTML<br>CSS<br>JavaScript</li>
+                        <li><span>Machine Learning</span><br>Linear Regression Models<br>Overfitting Optimization<br>Microsoft Azure OCR</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2023 - Present</span><br>Software Engineer Intern at Microsoft</li>
+                        <li><span>Jun 2021 - Aug 2021</span><br>ML Research Intern at Wormpex AI Research</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2022 - Present</span><br>B.S.E Computer Science and Engineering @ University of Michigan in Ann Arbor, MI</li>
+                        <li><span>Sep 2018 - Jun 2022</span><br>High School Diploma @ Newport Senior High School in Bellevue, WA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- links section -->
+<div id = "links">
+    <div class="container">
+        <h1 class = "sub-title">Links</h1>
+        <div class="links-list">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>GitHub</h2>
+                <p>This is where I keep all my projects, including this website! Everything contained in here is open-source and all
+                    contain descriptive ReadME's as introductions.
+                </p>
+                <a href="https://github.com/tamedquadrapanda?tab=repositories" target="_blank" rel="noopener noreferrer">see my repositories</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin"></i>
+                <h2>LinkedIn</h2>
+                <p>Below is a link to my LinkedIn. <br> <br> <br> <br> <br>
+                </p>
+                <a href="https://www.linkedin.com/in/josh-xie/" target="_blank" rel="noopener noreferrer">see my linkedin</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-lines"></i>
+                <h2>Resume</h2>
+                <p>Below is a download link for my resume, which contains an in-depth overview of my skills, education, and work experiences. <br> <br>
+                </p>
+                <a href="images/joshxieresume.pdf" download>see my resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--projects section-->
+<div id = "projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="projects">
+                <img src="images/1.png">
+                <div class="layer">
+                    <h3>Contest Autograder</h3>
+                    <p>This is an automatic grader used for grading coding competitions. The autograder, along with its back-end framework 
+                        comes with its own built-in website.
+                    </p>
+                    <a href="https://github.com/tamedquadrapanda/Contest-main" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" ></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="images/2.jpeg">
+                <div class="layer">
+                    <h3>Big 2 Card Game</h3>
+                    <p>This is a card game that is derived from China's DouDiZhu (Fight the Landlord). The game is coded in C++, can be played
+                        with 1-4 players, and can be simulated in any IDE.
+                    </p>
+                    <a href="https://github.com/tamedquadrapanda/big2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>This is the source code for this website!
+                    </p>
+                    <a href="https://github.com/tamedquadrapanda/tamedquadrapanda.github.io" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/tamedquadrapanda?tab=repositories" class="btn" target="_blank" rel="noopener noreferrer">see more</a>
+    </div>
+</div>
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">
+                    Contact
+                </h1>
+                <p><i class="fa-solid fa-paper-plane"></i> joshxiework@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (425)247-5062</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/josh._xie/" class = "instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/user/wpicmass100?si=e9f6c4d2a2f941d3" class = "spotify" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://www.snapchat.com/add/xie.josh?share_id=hxrj1aJzRWy1Ho3Ftyf4lg&locale=en_US" class = "snapchat" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://twitter.com/joshxiexie" class = "twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="name" required>
+                    <input type="text" name="Email" placeholder="email" required>
+                    <textarea name="Message" rows="6" placeholder="message"></textarea>
+                    <button type="submit" class="btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            the contact form currently isn't working, so send me a text/email instead! thanks!
+        </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidem = document.getElementById("sidemenu");
+    function openmenu() {
+        sidem.style.right = "0";
+    }
+    function closemenu() {
+        sidem.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
